@@ -1,0 +1,55 @@
+:root {
+  --start-color: blue;
+  --end-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    z-index: -1;
+}
+
+header {
+    width: 100vw;
+    height: 40px;
+    background-color: crimson;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+footer {
+    width: 100vw;
+    height: 120px;
+    background-color: crimson;
+}
+
+.box {
+    position: relative;
+  width: 595px;
+  height: 300px;
+  margin: 32px auto;
+  background-image: linear-gradient(
+    to top left,
+    var(--start-color),
+    var(--end-color)
+  );
+  box-shadow: 10px 10px 8px 2px black;
+}
+
+.icon_box {
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+}
+
+.position_box {
+  display: flex;
+}
